@@ -41,7 +41,7 @@ end
 
 group :production do
   # Use pg as the database for Active Record
-  # gem 'pg', '0.21'
+  gem 'pg', '0.21'
 end
 
 group :development do
