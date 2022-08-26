@@ -1,0 +1,11 @@
+{
+  "name": "bewd-todolist",
+  "engines": {
+    "node": "~16.14"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Altcademy/bewd-todolist.git",
+  "author": "h8rry <git@harrychen.net>",
+  "license": "MIT"
+}
