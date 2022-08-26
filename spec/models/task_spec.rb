@@ -35,8 +35,6 @@ RSpec.describe 'Task', type: :model do
     end
 
     it "'content' should have max 200 chars" do
-      task = Task.new
-
       expect {
         Task.create!(content: 'a' * 201)
       }.to raise_error(ActiveRecord::RecordInvalid)
