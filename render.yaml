@@ -1,8 +1,3 @@
-databases:
-  - name: bewd_todolist
-    databaseName: bewd_todolist
-    user: bewd_todolist
-
 services:
   - type: web
     name: bewd_todolist
