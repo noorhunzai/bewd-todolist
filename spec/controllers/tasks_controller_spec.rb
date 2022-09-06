@@ -5,23 +5,23 @@ RSpec.describe TasksController, type: :controller do
 
   describe 'GET /tasks' do
     it 'renders all tasks in JSON' do
-      task_1 = Task.create(content: 'Task #1')
-      task_2 = Task.create(content: 'Task #2')
+      task1 = Task.create(content: 'Task #1')
+      task2 = Task.create(content: 'Task #2')
 
       get :index
 
       expected_response = {
         tasks: [
           {
-            id: task_1.id,
-            content: task_1.content,
-            completed: task_1.completed,
-            created_at: task_1.created_at
+            id: task1.id,
+            content: task1.content,
+            completed: task1.completed,
+            created_at: task1.created_at
           }, {
-            id: task_2.id,
-            content: task_2.content,
-            completed: task_2.completed,
-            created_at: task_2.created_at
+            id: task2.id,
+            content: task2.content,
+            completed: task2.completed,
+            created_at: task2.created_at
           }
         ]
       }

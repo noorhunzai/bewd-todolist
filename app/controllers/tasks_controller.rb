@@ -7,9 +7,7 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(task_params)
 
-    if @task.save
-      render 'tasks/create' # can be omitted
-    end
+    render 'tasks/create' if @task.save # can be omitted
   end
 
   def destroy
