@@ -14,8 +14,7 @@ RSpec.describe 'Route definition', type: :routing do
   end
 
   it 'of PUT /tasks/:id/mark_complete' do
-    expect(put: '/tasks/:id/mark_complete').to route_to(controller: 'tasks', action: 'mark_complete',
-                                                        id: ':id')
+    expect(put: '/tasks/:id/mark_complete').to route_to(controller: 'tasks', action: 'mark_complete', id: ':id')
   end
 
   it 'of PUT /tasks/:id/mark_active' do
