@@ -6,13 +6,13 @@ Style/Documentation:
   Enabled: false
 Style/NumericLiterals:
   Exclude:
-    - db/schema.rb
+    - db/**/*
 Style/BlockDelimiters:
   Exclude:
     - spec/**/*
 Style/SymbolProc:
   Exclude:
-    - db/
+    - db/**/*
 Metrics/BlockLength:
   Enabled: false
 Style/MixinUsage:
