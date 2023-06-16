@@ -12,7 +12,7 @@ Style/BlockDelimiters:
     - spec/**/*
 Style/SymbolProc:
   Exclude:
-    - db/migrate/**/*
+    - db/
 Metrics/BlockLength:
   Enabled: false
 Style/MixinUsage:
